@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock">
+            
+            <!-- Decorative elements for light mode -->
+            <div class="light-decoration decoration-1"></div>
+            <div class="light-decoration decoration-2"></div>
+
+            <div class="clock-content">
+                <div class="title">
+                    <h1>Digital Clock</h1>
+                    <div class="theme-toggle">
+                        <i class="fas fa-sun"></i>
+                        <label class="switch">
+                            <input type="checkbox" id="themeToggle">
+                            <span class="slider round"></span>
+                        </label>
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </div>
+
+                <div class="current-date">
+                    <span id="fullDate"></span>
+                </div>
+
+                <div class="time-display">
+                    <div class="time-unit">
+                        <span class="label">Hours</span>
+                        <div id="hour" class="value"></div>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="time-unit">
+                        <span class="label">Minutes</span>
+                        <div id="minute" class="value"></div>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="time-unit">
+                        <span class="label">Seconds</span>
+                        <div id="second" class="value"></div>
+                    </div>
+                    <div class="time-unit am-pm">
+                        <span class="label">AM/PM</span>
+                        <div id="ampm" class="value"></div>
+                    </div>
+                </div>
+
+                <div class="additional-info">
+                    <div class="info-card">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>Day of Year</span>
+                        <span id="dayOfYear"></span>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <span>Timezone</span>
+                        <span id="timezone"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
